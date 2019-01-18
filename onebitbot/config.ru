@@ -1,6 +1,6 @@
 #configuração rake - middleware
 
-require 'rubygemns'
+require 'rubygems'
 require 'bundler'
 
 Bundler.require

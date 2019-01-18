@@ -1,12 +1,11 @@
 source :rubygems
-  gem 'sinatra' #framework ruby
-  gem 'activerecord' #relação entre models e banco de dados real
-  gem 'sinatra-activerecord'
-  gem 'pg' #conectar com o banco de dados postgres
-  gem 'rake' 
-  gem 'pg_search', '~> 2.0.1' #pesquisa dentro de postgres
-
-  group :development do 
-    gem 'tux' #acessar console - banco de dados - parecido com rails c
-  end
+gem 'sinatra' #framework ruby
+gem "activerecord" #relação entre models e banco de dados real
+gem "sinatra-activerecord"
+gem 'pg' #conectar com o banco de dados postgres
+gem 'rake'
+gem 'pg_search', '~> 2.0.1' #pesquisa dentro de postgres
+  
+group :development do
+  gem "tux" #acessar console - banco de dados - parecido com rails c
 end
