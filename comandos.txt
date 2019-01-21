@@ -1,0 +1,16 @@
+# lista de comandos utilizados nesse app 
+
+docker-compose up --build
+
+docker-compose run --rm website rake db:create
+
+docker-compose run --rm website rake db:create_migration NAME=create_faqs
+
+docker-compose run --rm website rake db:create_migration NAME=create_hashtags
+
+docker-compose run --rm website rake db:create_migration NAME=create_faq_hashtags
+
+docker-compose run --rm website rake db:migrate
+
+docker-compose run --rm website tux
+
