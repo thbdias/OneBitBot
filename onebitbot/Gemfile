@@ -5,7 +5,16 @@ gem "sinatra-activerecord"
 gem 'pg' #conectar com o banco de dados postgres
 gem 'rake'
 gem 'pg_search', '~> 2.0.1' #pesquisa dentro de postgres
+
+gem "factory_bot" # gerar factories no bando de dados
+gem "ffaker" # gera dados falsos
+gem 'database_cleaner' # limpar o banco de dados
   
 group :development do
   gem "tux" #acessar console - banco de dados - parecido com rails c
+end
+
+group :test do
+  gem "rack-test", require: "rack/test" # testes no sinatra
+  gem "rspec" # realizar testes automatizados
 end

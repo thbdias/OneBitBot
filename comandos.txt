@@ -14,3 +14,7 @@ docker-compose run --rm website rake db:migrate
 
 docker-compose run --rm website tux
 
+
+docker-compose run --rm website bundle install
+
+docker-compose build
