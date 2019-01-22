@@ -18,3 +18,9 @@ docker-compose run --rm website tux
 docker-compose run --rm website bundle install
 
 docker-compose build
+
+docker-compose run --rm website rspec spec/services/faq/create_service_spec.rb
+
+docker-compose run --rm website rspec spec/services/faq/list_service_spec.rb
+
+docker-compose run --rm website rspec spec/services/faq/remove_service_spec.rb
