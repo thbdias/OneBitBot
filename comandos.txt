@@ -38,3 +38,5 @@ git commit -m "msg"
 heroku git:remote -a NOME_APP
 
 git push heroku master
+
+heroku run rake db:migrate
