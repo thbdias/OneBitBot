@@ -32,9 +32,9 @@ heroku login -i
 
 heroku create NOME_APP 
 
-heroku git:remote -a NOME_APP
-
+git init 
 git add 
 git commit -m "msg"
+heroku git:remote -a NOME_APP
 
 git push heroku master
