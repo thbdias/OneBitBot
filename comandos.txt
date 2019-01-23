@@ -27,3 +27,14 @@ docker-compose run --rm website rspec spec/services/faq/remove_service_spec.rb
 docker-compose run --rm website rspec
 
 https://onebitbot-thbdias.herokuapp.com/ | https://git.heroku.com/onebitbot-thbdias.git
+
+heroku login -i 
+
+heroku create NOME_APP 
+
+heroku git:remote -a NOME_APP
+
+git add 
+git commit -m "msg"
+
+git push heroku master
